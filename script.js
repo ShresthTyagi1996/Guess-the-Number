@@ -1,16 +1,5 @@
 'use strict';
 
-// console.log(document.querySelector('.number').textContent);
-// document.querySelector('.number').textContent = 13;
-
-// document.querySelector('.message').textContent = '🥳 Correct Number!';
-
-// document.querySelector('.score').textContent = 19;
-
-// console.log(document.querySelector('.guess').textContent);
-
-// document.querySelector('.guess').value = 87;
-
 let randomNumber = Math.floor(Math.random() * 20 + 1);
 let score = 20;
 let highScore = 0;
@@ -18,7 +7,6 @@ let highScore = 0;
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
   if (!guess) {
-    debugger;
     document.querySelector('.message').textContent = '❌ No Number!';
     return;
   }
